@@ -58,3 +58,17 @@ It was built to solve an actual student problem and focuses on:
 
 ---
 
+![Dashboard preview](screenshots/dashboard.png)
+![Course List preview](screenshots/courselist.png)
+![Course Form preview](screenshots/courseform.png)
+![Mobile preview](screenshots/mobileview.png)
+
+---
+
+## Live Demo
+https://semester-manager.vercel.app/
+
+---
+
+## License
+This project is open for learning and personal use.
