@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import CourseContext from "./context/CourseContext";
 
 const Profile = () => {
@@ -13,6 +13,12 @@ const Profile = () => {
             setCourseLimit(limit);
         }
     };
+
+    const handleProfileDelete = () => {
+        setCourseLimit('');
+        setTotalCourses('');
+        setTotalUnits('');
+    }
     return ( 
         <div className="profile">
             <form onSubmit={handleProfile}>
@@ -45,6 +51,10 @@ const Profile = () => {
                      onChange={(e) => setMyName(e.target.value)} />
                 </div>
                 <button>Save</button>
+                <button
+                className="delete-profile"
+                 type="button"
+                 onClick={handleProfileDelete}>Delete</button>
 
                 {courseLimit && (<p>Current Limit Set:
                     <strong>{courseLimit}</strong>

@@ -4,7 +4,7 @@ import CourseContext from "./context/CourseContext";
 
 const CourseForm = () => {
     const { addCourse, getGrade, updateCourse,
-         editingCourse, courseLimit, courses } = useContext(CourseContext);
+         editingCourse, courseLimit, courses, myName } = useContext(CourseContext);
 
     const [ title, setTitle ] = useState('');
     const [ code, setCode ] = useState('');
@@ -66,6 +66,18 @@ const CourseForm = () => {
     const isAddingLimitReached = !isEditMode && courseLimit !== null
     && courses.length >= courseLimit;
 
+
+    if (!courseLimit) {
+        return (
+            <div className="setup-warning">
+                <h3>Hold on, {myName}!</h3>
+                <p>You need to set your semester limits in your profile
+                    before adding courses.
+                </p>
+                <button onClick={() => navigate('/profile')}>Go to Profile</button>
+            </div>
+        );
+    }
     return ( 
         <div className="course-form">
             <form onSubmit={handleSubmit}>

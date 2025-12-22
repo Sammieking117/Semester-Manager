@@ -365,6 +365,25 @@ nav.active {
   background: #ffe8e8;
   color: #d64545;
 }
+.setup-warning {
+  display: grid;
+  place-items: center;
+  padding: 7rem;
+}
+.setup-warning h3 {
+  color: #0ea5e9;
+}
+.setup-warning p {
+  color: #2c3e50;
+  margin: 10px 0;
+}
+.setup-warning button {
+  border: none;
+  background: #ffe8e8;
+  color: #d64545;
+  padding: 10px;
+  border-radius: 8px;
+}
 
 /* Style for profile */
 .profile {
@@ -392,6 +411,10 @@ nav.active {
   opacity: 0.85;
 }
 .profile form p {
+  color: #d64545;
+}
+.profile form .delete-profile {
+  background: #ffe8e8;
   color: #d64545;
 }
 
