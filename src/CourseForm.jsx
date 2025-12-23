@@ -4,7 +4,7 @@ import CourseContext from "./context/CourseContext";
 
 const CourseForm = () => {
     const { addCourse, getGrade, updateCourse,
-         editingCourse, courseLimit, courses, myName } = useContext(CourseContext);
+         editingCourse, courseLimit, courses, myName, } = useContext(CourseContext);
 
     const [ title, setTitle ] = useState('');
     const [ code, setCode ] = useState('');

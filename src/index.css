@@ -368,7 +368,7 @@ nav.active {
 .setup-warning {
   display: grid;
   place-items: center;
-  padding: 7rem;
+  padding: 7rem 2rem;
 }
 .setup-warning h3 {
   color: #0ea5e9;
@@ -376,6 +376,7 @@ nav.active {
 .setup-warning p {
   color: #2c3e50;
   margin: 10px 0;
+  text-align: center;
 }
 .setup-warning button {
   border: none;
